@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake Jigsaw Puzzle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Fix the Cake Puzzle!</h1>
+    <p>Drag the pieces to complete the cake.</p>
+
+    <!-- Puzzle Area -->
+    <div id="puzzleArea"></div>
+
+    <!-- Surprise Button (Hidden initially) -->
+    <div id="surpriseBtnContainer" class="hidden">
+        <button id="surpriseBtn">Excited for your surprise?</button>
+    </div>
+
+    <!-- Surprise Video and Message (Hidden initially) -->
+    <div id="surpriseContainer" class="hidden">
+        <video id="surpriseVideo" width="400" height="240" controls>
+            <source src="surprise.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="surpriseMessage"></div> <!-- message will appear below video -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
